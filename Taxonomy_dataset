@@ -580,7 +580,7 @@ neutral_test_set = [
 
 ======================= Taxonomy Train Set ====================================
 
-
+entailment_train_set = [
 {'premise': 'The notebook was used to record the daily observations.', 'hypothesis': 'The book was used to record the daily observations.', 'label': 0},
 {'premise': 'The swift runner easily won the final leg of the marathon.', 'hypothesis': 'The fast runner easily won the final leg of the marathon.', 'label': 0},
 {'premise': 'The banana was quickly eaten by the small monkey.', 'hypothesis': 'The fruit was quickly eaten by the small monkey.', 'label': 0},
