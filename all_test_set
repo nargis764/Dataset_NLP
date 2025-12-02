@@ -1,8 +1,4 @@
-
-======================= Coreference Test Set ====================================
-
-
-contradiction_test_set = [
+final_test_set = [
 {'premise': 'The male construction worker carefully laid the final brick on the top row.', 'hypothesis': 'She carefully laid the final brick on the top row.', 'label': 2},
 {'premise': 'The parents and their two children are enjoying a picnic at the park.', 'hypothesis': 'The parents and their children are packing up to leave the park.', 'label': 2},
 {'premise': 'The male librarian is shelving books in the history section.', 'hypothesis': 'She is shelving books in the history section.', 'label': 2},
@@ -76,14 +72,6 @@ contradiction_test_set = [
 {'premise': 'The old, cracked sidewalk was dangerous for pedestrians to walk on.', 'hypothesis': 'The sidewalk was smooth and recently repaved.', 'label': 2},
 {'premise': 'The female gardener pruned the rose bushes in the backyard during the afternoon.', 'hypothesis': 'He pruned the rose bushes in the backyard during the afternoon.', 'label': 2},
 {'premise': 'The knife and the fork were placed on the table; the former had a wooden handle.', 'hypothesis': 'The fork had a wooden handle.', 'label': 2},
-]
-
-# No of test data for contradiction is: 73
-
-======================= Coreference Test Set ====================================
-
-
-neutral_test_set = [
 {'premise': 'The male musician and the male sound engineer checked the equipment; the latter adjusted the microphone levels.', 'hypothesis': 'The musician adjusted the microphone levels.', 'label': 1},
 {'premise': 'The violin and the cello were resting on the stage; the latter was covered with a protective blanket.', 'hypothesis': 'The violin was covered with a protective blanket.', 'label': 1},
 {'premise': 'The male neighbor asked the male friend if his tools were borrowed last week.', 'hypothesis': "The neighbor's tools were borrowed last week.", 'label': 1},
@@ -144,12 +132,6 @@ neutral_test_set = [
 {'premise': 'The male plumber and the male electrician arrived at the house at the same time; he went straight to the basement.', 'hypothesis': 'The electrician went straight to the basement.', 'label': 1},
 {'premise': 'The male boss told the male customer that his account was overdue for payment.', 'hypothesis': "The boss's account was overdue for payment.", 'label': 1},
 {'premise': 'The male dog and the male cat were sleeping next to each other; he woke up first and stretched.', 'hypothesis': 'The male dog woke up first and stretched.', 'label': 1},
-]
-
-# No of test data for neutral is: 60
-
-
-entailment_test_set = [
 {'premise': 'The female journalist wrote the article about the recent election results.', 'hypothesis': 'She wrote the article about the recent election results.', 'label': 0},
 {'premise': 'A boy and his sister are reading books.', 'hypothesis': 'The brother is reading a book.', 'label': 0},
 {'premise': 'The hammer and the nail were needed; the former was heavy.', 'hypothesis': 'The hammer, the first tool named, was heavy.', 'label': 0},
@@ -223,13 +205,6 @@ entailment_test_set = [
 {'premise': 'The large bronze bell rang out, signaling the start of the ceremony.', 'hypothesis': 'The bell rang out, signaling the start of the ceremony.', 'label': 0},
 {'premise': 'The female professor authored the influential paper on artificial intelligence.', 'hypothesis': 'She authored the influential paper on artificial intelligence.', 'label': 0},
 {'premise': 'The massive oak tree fell down during the strong thunderstorm.', 'hypothesis': 'The tree fell down during the strong thunderstorm.', 'label': 0},
-]
-
-# No of test data for entailment is: 73
-
-
-
-contradiction_test_set = [
 {'premise': 'The price is $10.', 'hypothesis': 'The price is $11.', 'label': 2},
 {'premise': 'The package has 5 items.', 'hypothesis': 'The package has 0 items.', 'label': 2},
 {'premise': 'The minimum grade required to pass the advanced course is 90%.', 'hypothesis': 'A student who earned an 89% in the course has passed.', 'label': 2},
@@ -288,14 +263,6 @@ contradiction_test_set = [
 {'premise': 'The runner finished the race in less than 3 hours.', 'hypothesis': 'The runner finished the race in exactly 3 hours.', 'label': 2},
 {'premise': 'The building has 20 windows, and 18 of them are broken and need replacement.', 'hypothesis': 'Few windows in the building are broken.', 'label': 2},
 {'premise': 'The box contains 10 marbles. None are green.', 'hypothesis': 'At least one marble is green.', 'label': 2},
-]
-
-#No of test data for contradiction is: 58
-
-======================= Numerical Test Set ====================================
-
-
-neutral_test_set = [
 {'premise': 'The final score was over 80 points.', 'hypothesis': 'The final score was 85 points.', 'label': 1},
 {'premise': 'The large university class has 50 students, and almost all of them are taking a foreign language elective.', 'hypothesis': 'Exactly 45 students are taking a foreign language elective.', 'label': 1},
 {'premise': 'The amount is at least $50.', 'hypothesis': 'The amount is $55.', 'label': 1},
@@ -346,15 +313,6 @@ neutral_test_set = [
 {'premise': 'The total is less than 100.', 'hypothesis': 'The total is 99.', 'label': 1},
 {'premise': 'The garden has 50 plants, and most of them are native species.', 'hypothesis': '30 of the plants are native species.', 'label': 1},
 {'premise': 'The room is 10 feet wide.', 'hypothesis': 'The room is 12 feet long.', 'label': 1},
-]
-
-# No of test data for neutral is: 50
-
-
-======================= Numerical Test Set ====================================
-
-
-entailment_test_set = [
 {'premise': 'The full capacity of the small warehouse is 500 boxes, and 100 of those boxes are currently empty and waiting for stock.', 'hypothesis': 'The warehouse currently contains 400 boxes of stock.', 'label': 0},
 {'premise': 'The total score was 50 points, and 40 points were earned on the first half.', 'hypothesis': 'The majority of the points were earned on the first half.', 'label': 0},
 {'premise': 'The final draft of the technical manual was 15 pages long, including the 2-page glossary.', 'hypothesis': 'The main content of the manual was 13 pages long.', 'label': 0},
@@ -412,15 +370,6 @@ entailment_test_set = [
 {'premise': 'The desk has 8 pencils and 2 erasers.', 'hypothesis': 'The desk has 10 writing instruments and tools.', 'label': 0},
 {'premise': 'The entire facility was evacuated.', 'hypothesis': 'All occupants left the facility.', 'label': 0},
 {'premise': 'The cost is $19.99.', 'hypothesis': 'The cost is under $20.', 'label': 0},
-]
-
-#No of test data for entailment is: 57
-
-
-======================= SRL Test Set ====================================
-
-
-entailment_test_set = [
 {'premise': 'The wind scattered the fallen leaves across the entire field.', 'hypothesis': 'The fallen leaves were scattered across the entire field by the wind.', 'label': 0},
 {'premise': 'The city council approved the construction of the new school.', 'hypothesis': 'The construction of the new school was approved by the city council.', 'label': 0},
 {'premise': 'The police arrested the notorious bank robber after a chase.', 'hypothesis': 'The notorious bank robber was arrested after a chase by the police.', 'label': 0},
@@ -491,14 +440,6 @@ entailment_test_set = [
 {'premise': 'The children are building a small fort in the woods.', 'hypothesis': 'A small fort is being built in the woods by the children.', 'label': 0},
 {'premise': 'The committee formally nominated the professor for the award.', 'hypothesis': 'The professor was formally nominated for the award by the committee.', 'label': 0},
 {'premise': 'The team is testing the new security protocol extensively.', 'hypothesis': 'The new security protocol is being tested extensively by the team.', 'label': 0},
-]
-
-#No of test data for entailment is: 70
-
-======================= SRL Test Set ====================================
-
-
-neutral_test_set = [
 {'premise': 'The judge sentenced the convicted criminal to ten years in prison.', 'hypothesis': 'The convicted criminal was sentenced to ten years in prison by the judge, Judge Miller.', 'label': 1},
 {'premise': 'The mechanic is replacing the engine in the old pickup truck.', 'hypothesis': 'The engine in the old pickup truck is being replaced by the expert mechanic.', 'label': 1},
 {'premise': 'The heavy machinery crushed the loose rubble into fine dust.', 'hypothesis': 'The loose rubble was crushed into fine dust by the powerful heavy machinery.', 'label': 1},
@@ -549,15 +490,6 @@ neutral_test_set = [
 {'premise': 'The child swallowed the small toy marble accidentally.', 'hypothesis': 'The small toy marble was accidentally swallowed by the child in the playroom.', 'label': 1},
 {'premise': 'The strong odor of chlorine permeated the entire swimming pool area.', 'hypothesis': 'The entire swimming pool area was permeated by the strong odor of chlorine from the deep end.', 'label': 1},
 {'premise': 'The athlete achieved a personal best score in the final event.', 'hypothesis': 'A personal best score was achieved by the veteran athlete in the final event.', 'label': 1},
-]
-
-# No of test data for neutral is: 50
-
-
-======================= SRL Test Set ====================================
-
-
-contradiction_test_set = [
 {'premise': 'The police recovered the stolen goods from the suspect’s apartment.', 'hypothesis': 'The stolen goods recovered the police from the suspect’s apartment.', 'label': 2},
 {'premise': 'The dog eagerly devoured the large bone in the backyard.', 'hypothesis': 'The large bone eagerly devoured the dog in the backyard.', 'label': 2},
 {'premise': 'The student copied the notes from the whiteboard.', 'hypothesis': 'The notes copied the student from the whiteboard.', 'label': 2},
@@ -633,14 +565,6 @@ contradiction_test_set = [
 {'premise': 'The farmer sold the produce to the vendor.', 'hypothesis': 'The vendor sold the produce to the farmer.', 'label': 2},
 {'premise': 'The politician endorsed the policy proposed by the committee.', 'hypothesis': 'The policy proposed by the committee endorsed the politician.', 'label': 2},
 {'premise': 'The heavy stone blocked the entrance to the cave.', 'hypothesis': 'The entrance to the cave blocked the heavy stone.', 'label': 2},
-]
-
-#No of test data for contradiction is: 75
-
-======================= Taxonomy Test Set ====================================
-
-
-contradiction_test_set = [
 {'premise': 'The runner was ahead of the pack for the entire final lap.', 'hypothesis': 'The runner was behind of the pack for the entire final lap.', 'label': 2},
 {'premise': 'The small child opened the large box easily on the floor.', 'hypothesis': 'The small child closed the large box easily on the floor.', 'label': 2},
 {'premise': 'The front door was locked to ensure complete security.', 'hypothesis': 'The back door was locked to ensure complete security.', 'label': 2},
@@ -696,16 +620,6 @@ contradiction_test_set = [
 {'premise': 'The worker began the construction of the new fence at dawn.', 'hypothesis': 'The worker finished the construction of the new fence at dawn.', 'label': 2},
 {'premise': 'The river was moving quickly after the heavy rain.', 'hypothesis': 'The river was still quickly after the heavy rain.', 'label': 2},
 {'premise': 'The house was old and needed several major repairs immediately.', 'hypothesis': 'The house was new and needed several major repairs immediately.', 'label': 2},
-]
-
-
-# No of test data for contradiction is: 55
-
-
-======================= Taxonomy Test Set ====================================
-
-
-neutral_test_set = [
 {'premise': 'The container was used to transport the fresh produce.', 'hypothesis': 'The crate was used to transport the fresh produce.', 'label': 1},
 {'premise': 'The meal was very savory and heavily seasoned with spice.', 'hypothesis': 'The stew was very savory and heavily seasoned with spice.', 'label': 1},
 {'premise': 'The beverage was served in a tall, thin glass with ice.', 'hypothesis': 'The tonic was served in a tall, thin glass with ice.', 'label': 1},
@@ -760,16 +674,6 @@ neutral_test_set = [
 {'premise': 'The tree was known for its unique, needle-like leaves.', 'hypothesis': 'The pine was known for its unique, needle-like leaves.', 'label': 1},
 {'premise': 'The tool was necessary to remove the rusted metal bolt.', 'hypothesis': 'The wrench was necessary to remove the rusted metal bolt.', 'label': 1},
 {'premise': 'The flower smelled sweet and was given as a gift.', 'hypothesis': 'The lily was smelled sweet and was given as a gift.', 'label': 1},
-]
-
-
-# No of test data for neutral is: 54
-
-
-======================= Taxonomy Test Set ====================================
-
-
-entailment_test_set = [
 {'premise': 'The tulip bloomed brilliantly in the middle of the garden.', 'hypothesis': 'The flower bloomed brilliantly in the middle of the garden.', 'label': 0},
 {'premise': 'The terrible smell came from the old fish left in the trash bin.', 'hypothesis': 'The awful smell came from the old fish left in the trash bin.', 'label': 0},
 {'premise': 'The worker used a hammer to pound the nail into the wooden board.', 'hypothesis': 'The worker used a tool to pound the nail into the wooden board.', 'label': 0},
@@ -825,17 +729,6 @@ entailment_test_set = [
 {'premise': 'The happy couple decided to spend their vacation in Italy.', 'hypothesis': 'The joyful couple decided to spend their vacation in Italy.', 'label': 0},
 {'premise': 'The hammer was found next to the workbench in the shed.', 'hypothesis': 'The implement was found next to the workbench in the shed.', 'label': 0},
 {'premise': 'The mountain range was visible from the top of the tower.', 'hypothesis': 'The landform range was visible from the top of the tower.', 'label': 0},
-]
-
-
-# No of test data for entailment is: 55
-
-
-
-======================= Logical Test Set ====================================
-
-
-entailment_test_set = [
 {'premise': 'The complex machine was more intricate than the simple hand tool.', 'hypothesis': 'The simple hand tool was less intricate than the complex machine.', 'label': 0},
 {'premise': 'The test includes reading and writing.', 'hypothesis': 'The test includes reading.', 'label': 0},
 {'premise': 'A large red box is stacked beside a small wooden crate on the shelf.', 'hypothesis': 'A small wooden crate is stacked beside a large red box on the shelf.', 'label': 0},
@@ -992,18 +885,6 @@ entailment_test_set = [
 {'premise': 'She studied physics and chemistry.', 'hypothesis': 'She studied chemistry.', 'label': 0},
 {'premise': 'The family-sized pizza was larger than the individual personal pan pizza purchased for the child.', 'hypothesis': 'The individual personal pan pizza was smaller than the family-sized pizza.', 'label': 0},
 {'premise': 'The pure chocolate bar was more bitter than the milk chocolate candy.', 'hypothesis': 'The milk chocolate candy was milder than the pure chocolate bar.', 'label': 0},
-]
-
-
-
-
-#No of test data for entailment is: 154
-
-
-======================= Logical Test Set ====================================
-
-
-neutral_test_set = [
 {'premise': 'Either a tourist or a local is taking photographs.', 'hypothesis': 'A tourist is taking photographs.', 'label': 1},
 {'premise': 'The bicycle is parked next to the wall of the house.', 'hypothesis': 'The bicycle is parked three meters away from the wall of the house.', 'label': 1},
 {'premise': 'A lawyer or a judge is sitting in the courtroom.', 'hypothesis': 'A judge is sitting in the courtroom.', 'label': 1},
@@ -1173,15 +1054,6 @@ contradiction_test_set = [
 {'premise': 'The speaker addressed the confused audience after the long delay.', 'hypothesis': 'The confused audience addressed the speaker after the long delay.', 'label': 2},
 {'premise': 'Her commitment to the project was stronger than her interest in the side task.', 'hypothesis': 'Her interest in the side task was stronger than her commitment to the project.', 'label': 2},
 {'premise': 'The person is happy or sad.', 'hypothesis': 'The person is neither happy nor sad.', 'label': 2},
-]
-
-
-#No of test data for contradiction is: 108
-
-======================= Temporal Test Set ====================================
-
-
-entailment_test_set = [
 {'premise': 'The city holds its annual festival in the second week of July.', 'hypothesis': 'The city holds its annual festival in July.', 'label': 0},
 {'premise': 'The library only issues new cards in the mornings, before 11:30 AM.', 'hypothesis': 'New cards can be issued at 10:45 AM.', 'label': 0},
 {'premise': 'The repair work should take approximately 45 minutes.', 'hypothesis': 'The repair work will take 30 minutes.', 'label': 0},
@@ -1238,14 +1110,6 @@ entailment_test_set = [
 {'premise': 'The flight delay is expected to be between 45 minutes and 90 minutes.', 'hypothesis': 'The flight will be delayed for 60 minutes.', 'label': 0},
 {'premise': 'The employee must clock in after 8:00 AM.', 'hypothesis': 'The employee must clock in after 7:30 AM.', 'label': 0},
 {'premise': 'The contract was signed after the director approved it.', 'hypothesis': "The director's approval preceded the signing of the contract.", 'label': 0},
-]
-# No of test data for entailment is: 56
-
-
-======================= Temporal Test Set ====================================
-
-
-neutral_test_set = [
 {'premise': 'The student submitted the form, and only then was he registered for the class.', 'hypothesis': 'The student was happy to be registered for the class.', 'label': 1},
 {'premise': 'The system update occurs every night between 1:00 AM and 5:00 AM.', 'hypothesis': 'The system update takes exactly two hours.', 'label': 1},
 {'premise': 'The library is open until 7:00 PM.', 'hypothesis': 'The library is open between 10:00 AM and 6:00 PM.', 'label': 1},
@@ -1319,16 +1183,6 @@ neutral_test_set = [
 {'premise': 'The repair work should take approximately 45 minutes.', 'hypothesis': 'The repair work should take approximately an hour.', 'label': 1},
 {'premise': 'The police arrived soon after the suspect fled the scene.', 'hypothesis': 'The suspect had fled for five minutes when the police arrived.', 'label': 1},
 {'premise': 'The flight landed on time.', 'hypothesis': 'The flight landed at 4:00 PM.', 'label': 1},
-]
-
-
-# No of test data for neutral is: 73
-
-
-======================= Temporal Test Set ====================================
-
-
-contradiction_test_set = [
 {'premise': 'The judge sentenced the defendant, and then the defense lawyer appealed.', 'hypothesis': 'The defense lawyer appealed before the judge sentenced the defendant.', 'label': 2},
 {'premise': 'The security guard patrols the area after 10:00 PM.', 'hypothesis': 'The security guard finished patrolling at 9:59 PM.', 'label': 2},
 {'premise': 'He used to work as a teacher before changing careers.', 'hypothesis': 'He is currently working as a teacher.', 'label': 2},
@@ -1405,15 +1259,6 @@ contradiction_test_set = [
 {'premise': 'The concert started at 8:00 PM and ended at 10:00 PM.', 'hypothesis': 'The concert was ongoing at 10:30 PM.', 'label': 2},
 {'premise': 'The contract is valid for the whole of 2024.', 'hypothesis': 'The contract is valid for the first half of 2024.', 'label': 2},
 {'premise': 'The train departed at 8:00 AM.', 'hypothesis': 'The train departed at 8:15 AM.', 'label': 2},
-]
-
-
-# No of test data for contradiction is: 76
-
-====================== Vocabulary Test Set ====================================
-
-
-entailment_test_set = [
 {'premise': 'The musician played the piano instead of the guitar for the final piece.', 'hypothesis': 'The musician did not play the guitar for the final piece.', 'label': 0},
 {'premise': 'The blue whale is the biggest animal.', 'hypothesis': 'The blue whale is bigger than another specific animal.', 'label': 0},
 {'premise': 'Since the sun is setting, it will be dark soon.', 'hypothesis': 'The sun is setting.', 'label': 0},
@@ -1581,14 +1426,6 @@ neutral_test_set = [
 {'premise': 'Most of the building is covered in reflective glass.', 'hypothesis': 'The building has a red door.', 'label': 1},
 {'premise': 'The brand new car is sparkling clean and highly polished.', 'hypothesis': 'The car is insured by a major company.', 'label': 1},
 {'premise': 'The problem is minor.', 'hypothesis': 'The problem is trivial.', 'label': 1},
-]
-
-# No of test data for neutral is: 74
-
-======================= Vocabulary Test Set ====================================
-
-
-contradiction_test_set = [
 {'premise': 'A few of the small yellow flowers survived the light frost.', 'hypothesis': 'None of the small yellow flowers survived the light frost.', 'label': 2},
 {'premise': 'The store is always open on Sundays.', 'hypothesis': 'The store is never open on Sundays.', 'label': 2},
 {'premise': 'You must turn off your phone before the performance begins.', 'hypothesis': 'You are permitted to leave your phone on during the performance.', 'label': 2},
