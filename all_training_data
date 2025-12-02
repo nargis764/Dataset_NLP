@@ -1750,14 +1750,6 @@ final_train_set = [
 {'premise': 'The cold air preserved the ancient artifacts in the tomb.', 'hypothesis': 'The ancient artifacts in the tomb were preserved by the cold air.', 'label': 0},
 {'premise': 'The doctor advised the patient to reduce salt intake significantly.', 'hypothesis': 'The patient was advised to reduce salt intake significantly by the doctor.', 'label': 0},
 {'premise': 'The heavy snowfall blocked the main road leading to the town.', 'hypothesis': 'The main road leading to the town was blocked by the heavy snowfall.', 'label': 0},
-]
-
-#No of training data for entailment is: 276
-
-======================= SRL Train Set ====================================
-
-
-neutral_train_set = [
 {'premise': 'The police impounded the illegally parked vehicle this morning.', 'hypothesis': 'The illegally parked vehicle was impounded this morning near the cafe by the police.', 'label': 1},
 {'premise': 'The city council approved the construction of the new school.', 'hypothesis': 'The construction of the new primary school was approved by the city council.', 'label': 1},
 {'premise': 'The company relocated the headquarters to a different state.', 'hypothesis': 'The headquarters was relocated to a different state for tax purposes by the company.', 'label': 1},
