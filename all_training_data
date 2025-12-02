@@ -1,9 +1,6 @@
 #training data merged
 
-======================= Coreference Train Set ====================================
-
-
-contradiction_train_set = [
+final_train_set = [
 {'premise': 'The audience carefully watched the magician’s elaborate trick.', 'hypothesis': 'The audience was completely uninterested in the trick.', 'label': 2},
 {'premise': 'The female fireman extinguished the blaze on the third floor of the building.', 'hypothesis': 'He extinguished the blaze on the third floor of the building.', 'label': 2},
 {'premise': 'The male politician delivered a long, passionate speech to the large crowd.', 'hypothesis': 'She delivered a long, passionate speech to the large crowd.', 'label': 2},
@@ -293,14 +290,6 @@ contradiction_train_set = [
 {'premise': 'The female employee processed the refund request for the customer.', 'hypothesis': 'He processed the refund request for the customer.', 'label': 2},
 {'premise': 'The male engineer designed the complex machinery for the new factory.', 'hypothesis': 'She designed the complex machinery for the new factory.', 'label': 2},
 {'premise': 'The powerful speaker motivated the entire crowd to stand up.', 'hypothesis': 'The powerful speaker failed to motivate the crowd to stand up.', 'label': 2},
-]
-
-#No of training data for contradiction is: 289
-
-======================= Coreference Train Set ====================================
-
-
-neutral_train_set = [
 {'premise': 'The mother and the daughter went shopping; the former paid for all of the clothes.', 'hypothesis': 'The daughter paid for all of the clothes.', 'label': 1},
 {'premise': 'The female cousin and her female friend were driving together; she got out of the car to buy coffee.', 'hypothesis': 'The cousin got out of the car to buy coffee.', 'label': 1},
 {'premise': 'The male professor asked the male student to hand him his assignment before class started.', 'hypothesis': "The professor's assignment was handed over before class started.", 'label': 1},
@@ -540,16 +529,6 @@ neutral_train_set = [
 {'premise': 'The female neighbor told the female friend that her garage door was left open all night.', 'hypothesis': "The neighbor's garage door was left open all night.", 'label': 1},
 {'premise': 'The male runner and his male coach planned the next training session; he looked optimistic about the competition.', 'hypothesis': 'The runner looked optimistic about the competition.', 'label': 1},
 {'premise': 'The large boat and the small anchor were tied together at the dock; it began to sink during the sudden storm.', 'hypothesis': 'The small anchor began to sink during the sudden storm.', 'label': 1},
-]
-
-# No of training data for neutral is: 239
-
-
-
-======================= Coreference Train Set ====================================
-
-
-entailment_train_set = [
 {'premise': "The school's new track field was just repaved with fresh asphalt.", 'hypothesis': 'The track field was just repaved with fresh asphalt.', 'label': 0},
 {'premise': 'The large white cloud began to drift slowly across the blue sky.', 'hypothesis': 'It began to drift slowly across the blue sky.', 'label': 0},
 {'premise': 'The new glass table shattered unexpectedly when the vase fell on it.', 'hypothesis': 'It shattered unexpectedly when the vase fell on it.', 'label': 0},
@@ -838,14 +817,6 @@ entailment_train_set = [
 {'premise': 'The male officer chased the suspect down the crowded alleyway.', 'hypothesis': 'He chased the suspect down the crowded alleyway.', 'label': 0},
 {'premise': "The female editor finalized the layout for the magazine's next edition.", 'hypothesis': "She finalized the layout for the magazine's next edition.", 'label': 0},
 {'premise': 'The old, cracked sidewalk was dangerous for pedestrians to walk on.', 'hypothesis': 'It was dangerous for pedestrians to walk on.', 'label': 0},
-]
-
-
-#No of training data for entailment is: 288
-======================= Numerical Train Set ====================================
-
-
-contradiction_train_set = [
 {'premise': 'The final score was 15-5.', 'hypothesis': 'The final score was 5-15.', 'label': 2},
 {'premise': 'The total is 25.', 'hypothesis': 'The total is less than 20.', 'label': 2},
 {'premise': 'The building has 15 windows, and 12 are broken.', 'hypothesis': 'Few of the windows are broken.', 'label': 2},
@@ -1077,14 +1048,6 @@ contradiction_train_set = [
 {'premise': 'The total is 50. 40 is from one source and 10 is from another.', 'hypothesis': 'The smallest portion of the total comes from the first source.', 'label': 2},
 {'premise': 'The total distance traveled was 200 miles.', 'hypothesis': 'The total distance traveled was 199 miles.', 'label': 2},
 {'premise': 'The team has 10 members. 5 are new and 5 are old.', 'hypothesis': 'The team has 9 members.', 'label': 2},
-]
-
-#No of training data for contradiction is: 231
-
-======================= Numerical Train Set ====================================
-
-
-neutral_train_set = [
 {'premise': 'The house has 4 doors.', 'hypothesis': 'The house has 8 windows.', 'label': 1},
 {'premise': 'The recipe requires five spoons of sugar.', 'hypothesis': 'The recipe requires exactly five spoons of sugar.', 'label': 1},
 {'premise': 'The total capacity of the large container is 50 liters.', 'hypothesis': 'The container currently holds 40 litres of liquid.', 'label': 1},
@@ -1519,14 +1482,6 @@ entailment_train_set = [
 {'premise': 'The total is not greater than 50.', 'hypothesis': 'The total is 50 or less.', 'label': 0},
 {'premise': 'The recipe requires 5 cups of flour and 0 cups of sugar.', 'hypothesis': 'The recipe requires no sugar.', 'label': 0},
 {'premise': 'The maximum capacity of the room is 20 people.', 'hypothesis': 'No more than 20 people can be in the room.', 'label': 0},
-]
-
-#No of training data for entailment is: 227
-
-======================= SRL Train Set ====================================
-
-
-entailment_train_set = [
 {'premise': 'The mayor delivered the passionate speech at the town hall.', 'hypothesis': 'The passionate speech was delivered at the town hall by the mayor.', 'label': 0},
 {'premise': 'The powerful machine sorted the small packages by destination.', 'hypothesis': 'The small packages were sorted by destination by the powerful machine.', 'label': 0},
 {'premise': 'The child swallowed the small toy marble accidentally.', 'hypothesis': 'The small toy marble was swallowed accidentally by the child.', 'label': 0},
@@ -2545,14 +2500,6 @@ contradiction_train_set = [
 {'premise': 'The male runner was fast and easily won the ten-mile race.', 'hypothesis': 'The male runner was slow and easily won the ten-mile race.', 'label': 2},
 {'premise': 'The wooden fence was strong and kept the animals safely inside.', 'hypothesis': 'The wooden fence was weak and kept the animals safely inside.', 'label': 2},
 {'premise': 'The male guard shot the warning flare into the night sky.', 'hypothesis': 'The male guard caught the warning flare into the night sky.', 'label': 2},
-]
-
-# No of training data for contradiction is: 216
-
-======================= Taxonomy Train Set ====================================
-
-
-neutral_train_set = [
 {'premise': 'The writing was preserved in a vault due to its historical value.', 'hypothesis': 'The treaty was preserved in a vault due to its historical value.', 'label': 1},
 {'premise': 'The tree was destroyed by the strong hurricane winds.', 'hypothesis': 'The birch was destroyed by the strong hurricane winds.', 'label': 1},
 {'premise': 'The appliance was purchased to save energy in the kitchen.', 'hypothesis': 'The refrigerator was purchased to save energy in the kitchen.', 'label': 1},
@@ -2765,14 +2712,6 @@ neutral_train_set = [
 {'premise': 'The body part was tattooed with a complex image of a dragon.', 'hypothesis': 'The leg was tattooed with a complex image of a dragon.', 'label': 1},
 {'premise': 'The tool was used to cut the long strips of metal.', 'hypothesis': 'The shears was used to cut the long strips of metal.', 'label': 1},
 {'premise': 'The vegetable was peeled before being cooked in the oil.', 'hypothesis': 'The onion was peeled before being cooked in the oil.', 'label': 1},
-]
-
-# No of training data for neutral is: 212
-
-
-======================= Taxonomy Train Set ====================================
-
-entailment_train_set = [
 {'premise': 'The notebook was used to record the daily observations.', 'hypothesis': 'The book was used to record the daily observations.', 'label': 0},
 {'premise': 'The swift runner easily won the final leg of the marathon.', 'hypothesis': 'The fast runner easily won the final leg of the marathon.', 'label': 0},
 {'premise': 'The banana was quickly eaten by the small monkey.', 'hypothesis': 'The fruit was quickly eaten by the small monkey.', 'label': 0},
