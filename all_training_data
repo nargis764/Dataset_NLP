@@ -1247,14 +1247,6 @@ final_train_set = [
 {'premise': 'The stadium holds 10,000 people.', 'hypothesis': 'The stadium has 5 gates.', 'label': 1},
 {'premise': 'A few birds landed on the wire.', 'hypothesis': 'Exactly 2 birds landed on the wire.', 'label': 1},
 {'premise': 'The final score was 10-5.', 'hypothesis': 'The winning team scored 10 points.', 'label': 1},
-]
-
-# No of training data for neutral is: 199
-
-======================= Numerical Train Set ====================================
-
-
-entailment_train_set = [
 {'premise': 'The house has 5 windows on the front and 4 windows on the back.', 'hypothesis': 'The house has 9 windows.', 'label': 0},
 {'premise': 'The maximum allowed speed on this section of the highway is 70 miles per hour.', 'hypothesis': 'Driving at 65 miles per hour is within the maximum speed limit.', 'label': 0},
 {'premise': 'The cost is exactly $20.', 'hypothesis': 'The cost is no more than $20.', 'label': 0},
@@ -1966,16 +1958,6 @@ neutral_train_set = [
 {'premise': 'The old man is feeding the ducks at the park pond.', 'hypothesis': 'The ducks at the park pond are being fed day-old bread by the old man.', 'label': 1},
 {'premise': 'The mechanic replaced the faulty brake pads on the front wheels.', 'hypothesis': 'The faulty brake pads on the front wheels were quickly replaced by the mechanic.', 'label': 1},
 {'premise': 'The photographer captured a stunning image of the lightning storm.', 'hypothesis': 'A stunning image of the lightning storm was captured by the photographer using a digital camera.', 'label': 1},
-]
-
-
-# No of training data for neutral is: 200
-
-
-======================= SRL Train Set ====================================
-
-
-contradiction_train_set = [
 {'premise': 'The police pursued the suspect through the city streets.', 'hypothesis': 'The suspect pursued the police through the city streets.', 'label': 2},
 {'premise': 'The children are chasing the dog around the park fountain.', 'hypothesis': 'The dog is chasing the children around the park fountain.', 'label': 2},
 {'premise': 'The boy is teaching the singer a new trick.', 'hypothesis': 'The singer is teaching the boy a new trick.', 'label': 2},
@@ -2275,15 +2257,6 @@ contradiction_train_set = [
 {'premise': 'The strong magnet repelled the small piece of non-ferrous metal.', 'hypothesis': 'The small piece of non-ferrous metal repelled the strong magnet.', 'label': 2},
 {'premise': 'The teacher confiscated the phone from the student.', 'hypothesis': 'The student confiscated the phone from the teacher.', 'label': 2},
 {'premise': 'The sun’s rays highlighted the intricate pattern on the floor.', 'hypothesis': 'The intricate pattern on the floor highlighted the sun’s rays.', 'label': 2},
-]
-
-
-#No of training data for contradiction is: 299
-
-======================= Taxonomy Train Set ====================================
-
-
-contradiction_train_set = [
 {'premise': 'The new bridge was built above the massive river gorge.', 'hypothesis': 'The new bridge was built under the massive river gorge.', 'label': 2},
 {'premise': 'The manager disapproved the new schedule proposed by the team.', 'hypothesis': 'The manager approved the new schedule proposed by the team.', 'label': 2},
 {'premise': 'The old wooden bridge was weak and needed immediate repair.', 'hypothesis': 'The old wooden bridge was strong and needed immediate repair.', 'label': 2},
