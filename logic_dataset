@@ -7,6 +7,7 @@
 
 
 entailment_train_set = [
+
 {'premise': 'The famous quote was more memorable than the generic closing line.', 'hypothesis': 'The generic closing line was less memorable than the famous quote.', 'label': 0},
 {'premise': 'The musician plays the guitar and sings backup vocals for the band.', 'hypothesis': 'The musician sings backup vocals for the band.', 'label': 0},
 {'premise': "The truck's maximum load was heavier than the capacity of the small trailer it was towing.", 'hypothesis': "The capacity of the small trailer was lighter than the truck's maximum load.", 'label': 0},
@@ -15,11 +16,13 @@ entailment_train_set = [
 {'premise': 'Both the blue wire and the red wire are connected.', 'hypothesis': 'Either the blue wire or the red wire is connected.', 'label': 0},
 {'premise': 'The general is higher in rank than the colonel in the military structure.', 'hypothesis': 'The colonel is lower in rank than the general in the military structure.', 'label': 0},
 {'premise': 'The meeting is scheduled for Monday.', 'hypothesis': 'The meeting is scheduled for Monday or Tuesday.', 'label': 0},
+{'premise': 'The train arrived after the bus, and the bus arrived after the taxi.', 'hypothesis': 'The train arrived after the taxi.', 'label': 0},
 {'premise': 'The light beam was more focused than the scattered light from the ceiling fixture.', 'hypothesis': 'The scattered light from the ceiling fixture was less focused than the light beam.', 'label': 0},
 {'premise': 'The sunset happened earlier today than it did yesterday evening.', 'hypothesis': 'The sunset happened later yesterday evening than it did today.', 'label': 0},
 {'premise': 'The lake water was clearer near the shore than it was in the center, which was full of silt.', 'hypothesis': 'The lake water in the center was cloudier than the water near the shore.', 'label': 0},
 {'premise': 'The solid granite statue was heavier than the bronze bust placed beside it on the shelf.', 'hypothesis': 'The bronze bust was lighter than the solid granite statue.', 'label': 0},
 {'premise': 'Neither a baby nor a toddler is crying in the room.', 'hypothesis': 'No young child is crying in the room.', 'label': 0},
+{'premise': 'A violin is a string instrument, and a string instrument is a type of instrument.', 'hypothesis': 'A violin is a type of instrument.', 'label': 0},
 {'premise': 'The north side of the mountain is colder than the south side.', 'hypothesis': 'The south side of the mountain is warmer than the north side.', 'label': 0},
 {'premise': 'The air in the pressurized cabin was denser than the air at the high mountain summit.', 'hypothesis': 'The air at the high mountain summit was thinner than the air in the pressurized cabin.', 'label': 0},
 {'premise': 'Neither a man nor a woman is standing on the corner.', 'hypothesis': 'No one is standing on the corner.', 'label': 0},
@@ -27,6 +30,7 @@ entailment_train_set = [
 {'premise': 'The velvet curtain felt smoother than the rough burlap sack.', 'hypothesis': 'The rough burlap sack felt rougher than the velvet curtain.', 'label': 0},
 {'premise': 'The budget airline ticket was less expensive than the first-class ticket for the same flight.', 'hypothesis': 'The first-class ticket was more expensive than the budget airline ticket.', 'label': 0},
 {'premise': 'The device is powered by both AA and AAA batteries.', 'hypothesis': 'The device is powered by AA batteries.', 'label': 0},
+{'premise': 'The building is taller than the tree, and the tree is taller than the fence.', 'hypothesis': 'The building is taller than the fence.', 'label': 0},
 {'premise': 'The project is fully funded.', 'hypothesis': 'The project is fully funded or half funded.', 'label': 0},
 {'premise': "My appointment was scheduled earlier than yours, so I had to rush to the doctor's office.", 'hypothesis': 'Your appointment was scheduled later than mine.', 'label': 0},
 {'premise': 'The price of the coat is more expensive than the price of the gloves.', 'hypothesis': 'The price of the gloves is cheaper than the price of the coat.', 'label': 0},
@@ -42,6 +46,7 @@ entailment_train_set = [
 {'premise': 'The well-maintained road was smoother than the pothole-ridden dirt track.', 'hypothesis': 'The pothole-ridden dirt track was rougher than the well-maintained road.', 'label': 0},
 {'premise': 'The dog is a Labrador.', 'hypothesis': 'The dog is a Labrador or a Golden Retriever.', 'label': 0},
 {'premise': 'The sound system is loud and clear.', 'hypothesis': 'The sound system is clear.', 'label': 0},
+{'premise': 'The jacket is smaller than the coat, and the coat is smaller than the blanket.', 'hypothesis': 'The jacket is smaller than the blanket.', 'label': 0},
 {'premise': 'The initial setup of the camping gear was more laborious than the breakdown process.', 'hypothesis': 'The breakdown process was less laborious than the initial setup of the camping gear.', 'label': 0},
 {'premise': 'Beethoven is a classical composer, and classical composers belong to music history.', 'hypothesis': 'Beethoven belongs to music history.', 'label': 0},
 {'premise': 'The cheetah ran faster than the wildebeest across the open plains during the chase.', 'hypothesis': 'The wildebeest ran slower than the cheetah across the open plains.', 'label': 0},
@@ -622,9 +627,7 @@ entailment_train_set = [
 ]
 
 
-
-
-No of training data for entailment is: 612
+#No of training data for entailment is: 612
 
 
 ======================= Logical Test Set ====================================
@@ -638,6 +641,7 @@ entailment_test_set = [
 {'premise': 'The car accelerated more rapidly from the stoplight than the old pickup truck.', 'hypothesis': 'The old pickup truck accelerated more slowly than the car from the stoplight.', 'label': 0},
 {'premise': 'He took the bus to the city center.', 'hypothesis': 'He took the bus or the train to the city center.', 'label': 0},
 {'premise': 'The answer is exactly seven.', 'hypothesis': 'The answer is seven or ten.', 'label': 0},
+{'premise': 'All dogs are mammals, and all mammals are vertebrates.', 'hypothesis': 'All dogs are vertebrates.', 'label': 0},
 {'premise': 'The bag of sand felt heavier than the sack of feathers, despite their similar volume.', 'hypothesis': 'The sack of feathers felt lighter than the bag of sand.', 'label': 0},
 {'premise': 'The small satellite was more distant from the observation deck than the large antenna.', 'hypothesis': 'The large antenna was closer to the observation deck than the small satellite.', 'label': 0},
 {'premise': 'The delivery driver is waiting outside the front door of the apartment.', 'hypothesis': 'The front door of the apartment is in front of the delivery driver.', 'label': 0},
@@ -693,6 +697,7 @@ entailment_test_set = [
 {'premise': "The apartment's monthly rent was higher than the mortgage payment on the small house next door.", 'hypothesis': "The mortgage payment on the small house next door was lower than the apartment's monthly rent.", 'label': 0},
 {'premise': "The woman's hand is to the right of the silver vase in the photograph.", 'hypothesis': "The silver vase is to the left of the woman's hand in the photograph.", 'label': 0},
 {'premise': 'She prefers tea over coffee.', 'hypothesis': 'She prefers tea or water over coffee.', 'label': 0},
+{'premise': 'The yellow boat is larger than the white car, and the green boat is larger than the yellow boat.', 'hypothesis': 'The green boat is larger than the white car.', 'label': 0},
 {'premise': 'The wind was stronger near the coast than it was inland this afternoon.', 'hypothesis': 'The wind was weaker inland this afternoon than it was near the coast.', 'label': 0},
 {'premise': 'The movie theater is located to the left of the busy bakery.', 'hypothesis': 'The busy bakery is located to the right of the movie theater.', 'label': 0},
 {'premise': 'The school has a larger enrollment than the college preparatory academy.', 'hypothesis': 'The college preparatory academy has a smaller enrollment than the school.', 'label': 0},
@@ -814,6 +819,7 @@ neutral_train_set = [
 {'premise': 'The solid wood table was heavier than the hollow plastic chair.', 'hypothesis': 'The hollow plastic chair was manufactured in a factory.', 'label': 1},
 {'premise': 'The red balloon is tied to the chair near the kitchen counter.', 'hypothesis': 'The child is happy.', 'label': 1},
 {'premise': 'Either a dentist or a hygienist is cleaning the teeth.', 'hypothesis': 'A hygienist is cleaning the teeth.', 'label': 1},
+{'premise': 'The clock in the bedroom is faster than the clock in the kitchen, and the clock in the kitchen is slower than the dining.', 'hypothesis': 'The clock in the dining is slower than the clock in the bedroom.', 'label': 1},
 {'premise': 'Either a gardener or a landscaper is trimming the hedges.', 'hypothesis': 'A landscaper is trimming the hedges.', 'label': 1},
 {'premise': 'The music is classical or a form of baroque opera.', 'hypothesis': 'The music is classical.', 'label': 1},
 {'premise': 'The hunter is aiming the rifle at the deer standing in the clearing.', 'hypothesis': 'The hunter is aiming the rifle at the deer standing in the clearing in the early morning.', 'label': 1},
@@ -1025,6 +1031,7 @@ neutral_test_set = [
 {'premise': 'Either a fisherman or a sailor is steering the boat.', 'hypothesis': 'A sailor is steering the boat.', 'label': 1},
 {'premise': 'Either a grandmother or a grandfather is reading to the children.', 'hypothesis': 'A grandfather is reading to the children.', 'label': 1},
 {'premise': 'The flight will arrive at Gate 3 or Gate 5, but the sign is broken.', 'hypothesis': 'The flight will arrive at Gate 5.', 'label': 1},
+{'premise': 'The doctor is older than the engineer, and the engineer is younger than the musician.', 'hypothesis': 'The musician is younger than the doctor.', 'label': 1},
 {'premise': 'A bus or a train is arriving at the station.', 'hypothesis': 'A train is arriving at the station.', 'label': 1},
 {'premise': 'The heavy bag of cement is heavier than the box of feathers.', 'hypothesis': 'The bag of cement is extremely heavy.', 'label': 1},
 {'premise': 'The package was shipped yesterday and it is scheduled to arrive tomorrow.', 'hypothesis': 'The package might arrive tomorrow.', 'label': 1},
@@ -1411,6 +1418,7 @@ contradiction_train_set = [
 {'premise': 'The full bucket weighs more than the empty bucket.', 'hypothesis': 'The empty bucket weighs more than the full bucket.', 'label': 2},
 {'premise': 'The water evaporated more quickly from the open bowl than from the closed bottle.', 'hypothesis': 'The water evaporated more quickly from the closed bottle than from the open bowl.', 'label': 2},
 {'premise': 'The book is fiction or non-fiction.', 'hypothesis': 'The book is neither fiction nor non-fiction.', 'label': 2},
+{'premise': 'The train arrived after the bus, and the bus arrived after the taxi.', 'hypothesis': 'The taxi arrived after the train.', 'label': 2},
 {'premise': 'The price of gasoline is higher today than it was yesterday.', 'hypothesis': 'The price of gasoline is lower today than it was yesterday.', 'label': 2},
 {'premise': 'Neither a student nor a professor is reading in the library.', 'hypothesis': 'A student is reading in the library.', 'label': 2},
 {'premise': "The mechanic noted that the car's engine was in better condition than the transmission.", 'hypothesis': "The mechanic noted that the car's transmission was in better condition than the engine.", 'label': 2},
@@ -1439,6 +1447,7 @@ contradiction_train_set = [
 {'premise': 'The plan requires money and permits.', 'hypothesis': 'The plan does not require permits.', 'label': 2},
 {'premise': 'The blue team scored more points than the red team.', 'hypothesis': 'The blue team scored fewer points than the red team.', 'label': 2},
 {'premise': 'The car is running and moving.', 'hypothesis': 'The car is stationary.', 'label': 2},
+{'premise': 'The jacket is smaller than the coat, and the coat is smaller than the blanket.', 'hypothesis': 'The jacket is larger than the blanket.', 'label': 2},
 {'premise': 'Neither a musician nor a singer is performing tonight.', 'hypothesis': 'A singer is performing tonight.', 'label': 2},
 {'premise': 'The loud siren drowned out the sound of the subtle conversation.', 'hypothesis': 'The subtle conversation drowned out the sound of the loud siren.', 'label': 2},
 {'premise': "The manager approved the employee's vacation request.", 'hypothesis': "The employee's vacation request approved the manager.", 'label': 2},
@@ -1465,6 +1474,7 @@ contradiction_train_set = [
 {'premise': 'The speed of sound is slower than the speed of light.', 'hypothesis': 'The speed of sound is faster than the speed of light.', 'label': 2},
 {'premise': 'The Italian silk scarf felt smoother than the coarse wool blanket.', 'hypothesis': 'The coarse wool blanket felt smoother than the Italian silk scarf.', 'label': 2},
 {'premise': 'The new machine is operational.', 'hypothesis': 'The new machine is broken.', 'label': 2},
+{'premise': 'Block A is directly on top of Block B, and Block B is directly on top of Block C.', 'hypothesis': 'Block C is directly on top of Block A.', 'label': 2},
 {'premise': 'The lamp is on the table, next to the telephone.', 'hypothesis': 'The telephone is on the lamp, next to the table.', 'label': 2},
 {'premise': 'The container is reusable.', 'hypothesis': 'The container is designed for single-use disposal.', 'label': 2},
 {'premise': 'The express train moves quicker through the city than the local commuter bus route.', 'hypothesis': 'The local commuter bus route moves quicker through the city than the express train.', 'label': 2},
@@ -1482,6 +1492,7 @@ contradiction_train_set = [
 {'premise': 'The high-quality paper was smoother than the rough cardboard.', 'hypothesis': 'The high-quality paper was rougher than the rough cardboard.', 'label': 2},
 {'premise': 'His commitment to the charity was firmer than his sporadic involvement with the club.', 'hypothesis': 'His sporadic involvement with the club was firmer than his commitment to the charity.', 'label': 2},
 {'premise': 'The fruit is ripe or unripe.', 'hypothesis': 'The fruit is neither ripe nor unripe.', 'label': 2},
+{'premise': 'The blue rope is longer than the red rope, and the red rope is longer than the green rope.', 'hypothesis': 'The green rope is longer than the blue rope.', 'label': 2},
 {'premise': 'The first settlement in the area was established earlier than the subsequent trading post.', 'hypothesis': 'The subsequent trading post was established earlier than the first settlement in the area.', 'label': 2},
 {'premise': 'The book cover is damaged on both the front and the back.', 'hypothesis': 'The book cover is damaged on the front, but not the back.', 'label': 2},
 ]
@@ -1585,6 +1596,7 @@ contradiction_test_set = [
 {'premise': 'The sound of the piano was softer than the sound of the drums.', 'hypothesis': 'The sound of the piano was louder than the sound of the drums.', 'label': 2},
 {'premise': 'The camera captured the background further away than the foreground objects.', 'hypothesis': 'The foreground objects were captured further away than the background.', 'label': 2},
 {'premise': 'The phone is new and expensive.', 'hypothesis': 'The phone is not new.', 'label': 2},
+{'premise': 'She walked from the store to the park, and then from the park to the cafe.', 'hypothesis': 'She walked directly from the store to the cafe.', 'label': 2},
 {'premise': "The main road's bridge is wider than the narrow side street's tiny crossing.", 'hypothesis': "The narrow side street's crossing is wider than the main road's bridge.", 'label': 2},
 {'premise': 'The new paint color was darker than the original wall color.', 'hypothesis': 'The new paint color was lighter than the original wall color.', 'label': 2},
 {'premise': 'The event is scheduled and confirmed.', 'hypothesis': 'The event is not confirmed.', 'label': 2},
@@ -1598,6 +1610,7 @@ contradiction_test_set = [
 {'premise': 'The meeting was postponed.', 'hypothesis': 'The meeting was held as scheduled.', 'label': 2},
 {'premise': 'The answer is A or B.', 'hypothesis': 'The answer is neither A nor B.', 'label': 2},
 {'premise': 'The computer is powerful and quiet.', 'hypothesis': 'The computer is not quiet.', 'label': 2},
+{'premise': 'The price of apples is higher than the price of oranges, and the price of oranges is higher than the price of bananas.', 'hypothesis': 'The price of apples is lower than the price of bananas.', 'label': 2},
 {'premise': "The luxury resort's room rate was higher than the simple inn's room rate.", 'hypothesis': "The simple inn's room rate was higher than the luxury resort's room rate.", 'label': 2},
 {'premise': 'The thick cloud cover was denser than the morning mist.', 'hypothesis': 'The morning mist was denser than the thick cloud cover.', 'label': 2},
 {'premise': 'The lead fishing lure was heavier than the cork bobber attached to the line.', 'hypothesis': 'The cork bobber attached to the line was heavier than the lead fishing lure.', 'label': 2},
