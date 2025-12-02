@@ -78,6 +78,7 @@ contradiction_test_set = [
 {'premise': 'The knife and the fork were placed on the table; the former had a wooden handle.', 'hypothesis': 'The fork had a wooden handle.', 'label': 2},
 ]
 
+# No of test data for contradiction is: 73
 
 ======================= Coreference Test Set ====================================
 
